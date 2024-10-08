@@ -31,31 +31,34 @@ body {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr;
+    width: 80%;
+    height: 80vh;
 }
 
-#icon div {
+.border {
     width: 5.5vw;
     height: 4.5vw;
-    margin-top: 5vw;
-    margin-left: 2vw;
-    /* display: grid;
-    grid-template-rows: 1fr 1fr; */
+    display: grid;
+    margin: auto;
     text-align: center;
 }
 
-#icon div :hover {
+.border :hover {
     cursor: pointer;
     border: 0.2vw solid var(--purple);
 }
 
-#icon div img {
+.border div :hover{
+    border: none;
+}
+
+.border div img {
     width: 4.5vw;
     height: 4.5vw;
     margin: 0 auto;
 }
 
 #documents {
-    margin-top: 2vw;
     grid-column: 1/2;
     grid-row: 1/2;
 }
@@ -76,7 +79,6 @@ body {
 }
 
 #controls {
-    margin-top: 2vw;
     grid-column: 2/3;
     grid-row: 1/2;
 }
@@ -113,7 +115,7 @@ footer {
     grid-column: 2/3;
     position: relative;
     left: 8vw;
-    padding-top: 0.6vw;
+    padding-top: 0.5vw;
     margin: 0;
 }
 
@@ -122,7 +124,8 @@ footer img {
     grid-column: 3/4;
     position: relative;
     left: 6vw;
-    margin-top: 0.5vw;
+    margin-top: 0.35vw;
+    margin-bottom: 0.35vw;
     width: 1.8vw;
     height: 1.8vw;
 }
